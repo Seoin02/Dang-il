@@ -253,7 +253,7 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
   return (
     <>
       {getdata && (
-        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[680px] mobile:max-w-[520px]  mobile:flex mobile:flex-col mobile:items-center">
+        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[680px] mobile:w-full  mobile:flex mobile:flex-col mobile:items-center">
           <Modal
             content={modalContent}
             isOpen={isOpen}
