@@ -253,7 +253,7 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
   return (
     <>
       {getdata && (
-        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[680px] mobile:w-full  mobile:flex mobile:flex-col mobile:items-center">
+        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[680px] mobile:w-full  mobile:flex mobile:flex-col mobile:items-start">
           <Modal
             content={modalContent}
             isOpen={isOpen}
@@ -284,8 +284,9 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
                 isPastNotice={isPast}
               />
             </div>
-            <div className="w-[346px] tablet:w-[680px] mobile:max-w-[351px] ml-6 mobile:ml-1 flex flex-col justify-between">
+            <div className="w-[346px] tablet:w-[680px] mobile:max-w-[351px] mobile:items-center mobile:ml-1 flex flex-col justify-between mobile:g-2">
               <p className="text-base font-bold text-primary">시급</p>
+              <div className="flex ">
               <HourlyPayForWon
                 hourlyPay={getdata.hourlyPay}
                 closed={getdata.closed}
@@ -298,6 +299,7 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
                 address1={getdata.shop.item.address1}
                 closed={false}
               />
+                </div>
               <p className="my-3">{getdata.shop.item.description}</p>
 
               <Button
