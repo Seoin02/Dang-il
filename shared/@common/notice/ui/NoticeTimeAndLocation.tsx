@@ -28,7 +28,7 @@ const NoticeTimeAndLocation = ({
   const businessHours = businessHoursString(startsAt, workhour);
   return (
     <>
-      <div className="flex flex-row my-2 pr-2">
+      <div className="flex my-2 pr-2">
         <Image
           src={`/images/icon-clock-${closed || isPastNotice ? 'off' : 'on'}.svg`}
           alt="clock icon"

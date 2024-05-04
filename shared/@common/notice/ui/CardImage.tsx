@@ -25,7 +25,7 @@ const CardImage = ({
   height,
 }: props) => {
   return (
-    <div className="flex justify-center items-center rounded-2xl object-cover w-[550px] h-[346px] relative">
+    <div className="flex justify-center items-center rounded-2xl object-cover w-[550px] h-[346px] tablet:w-full tablet:h-full mobile:w-full mobile:h-full relative">
       <Image
         className="object-cover"
         src={imageUrl}
@@ -36,7 +36,7 @@ const CardImage = ({
 
       {(closed || isPastNotice) && (
         <>
-          <div className="absolute items-center bg-black opacity-50 rounded-2xl m-[-10px] w-[557px] h-[345px]" />
+          <div className="absolute items-center bg-black opacity-50 rounded-2xl m-[-10px] w-[557px] h-[345px] tablet:w-full tablet:h-full mobile:w-full mobile:h-full" />
           <p className="absolute text-3xl font-bold text-gray-30">
             {isPastNotice ? '지난 공고' : '닫힌 공고'}
           </p>

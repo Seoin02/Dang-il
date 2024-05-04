@@ -8,7 +8,7 @@ const Footer = dynamic(() => import('@/shared/@common/ui/Footer/Footer'));
 
 const MyShopInfo = () => {
   return (
-    <div className="bg-white h-[100vh]">
+    <div className="bg-white h-[100vh] w-full">
       <NavigationBar />
       <FindShop />
       <Footer />

@@ -69,14 +69,14 @@ const FindNotice = () => {
   };
 
   return (
-    <div className="flex pt-[60px] pb-[120px] flex-col items-start gap-2">
+    <div className="flex pt-[60px] pb-[120px] flex-col items-start gap-2 w-full">
       <div className="flex flex-col items-start gap-8">
         <p className="text-black text-[28px] font-bold">
           {isNotice ? '내가 등록한 공고' : '등록한 공고'}
         </p>
         {isNotice ? (
-          <div className="w-full px-auto">
-            <div className="grid grid-cols-3 gap-6">
+          <div className="flex flex-col gap-10 px-4 w-[983px] tablet:w-[678px] mobile:w-full">
+            <div className="w-full grid grid-cols-3 grid-rows-2 gap-4 tablet:grid-cols-2 mobile:grid-cols-2 mobile: g-3">
               {cardList
                 .slice(cardOffset, cardOffset + showCard)
                 .map((card: CardData) => (
@@ -93,7 +93,7 @@ const FindNotice = () => {
                   />
                 ))}
             </div>
-            <div className="px-[400px]">
+            <div className="flex flex-col gap-10 px-4 w-[983px] tablet:w-[678px] mobile:w-full">
               <Pagination
                 totalPage={1}
                 limit={10}

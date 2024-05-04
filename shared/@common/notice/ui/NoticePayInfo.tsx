@@ -46,7 +46,7 @@ const NoticePayInfo = ({
               : 'bg-primary text-white'
           } rounded-[20px] w-[159px] px-3 py-1 mobile:px-[0px] flex justify-center items-center mobile:bg-white mobile:items-start`}
         >
-          <div className="text-[12px] w-[159px] text-white overflow-hidden whitespace-nowrap text-ellipsis mobile:text-purple-30 text-center ">
+          <div className="text-[12px] w-[159px] text-white overflow-hidden whitespace-nowrap text-ellipsis mobile:text-purple-30 text-center mobile:text-left">
             기존 시급보다 {pay}%⬆
           </div>
         </div>

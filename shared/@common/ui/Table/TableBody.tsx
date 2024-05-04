@@ -87,11 +87,11 @@ const TableBody = ({ isEmployee, shopId, noticeId, user }: TableProps) => {
               </td>
               <td
                 key={v.item.user.item.id}
-                className="flex w-1/4 py-5 px-4 items-center gap-3 flex-shrink-1 self-stretch border-b-gray-20 overflow-auto whitespace-pre"
+                className="flex w-1/4 py-5 px-4 items-center gap-3 flex-shrink-1 self-stretch border-b-gray-20 overflow-auto whitespace-pre  scrollbar-hide"
               >
                 {v.item.user.item.phone}
               </td>
-              <td className="flex w-1/4 py-5 px-3 items-center gap-3 flex-shrink-0 self-stretch border-b-gray-20 ">
+              <td className="flex w-1/4 py-5 px-3 items-center gap-3 flex-shrink-0 self-stretch border-b-gray-20 mobile:flex-col">
                 <TableButton
                   key={v.item.user.item.id}
                   onClick={() => {
@@ -127,11 +127,11 @@ const TableBody = ({ isEmployee, shopId, noticeId, user }: TableProps) => {
               </td>
               <td
                 key={v.item.notice.item.id}
-                className="flex w-1/4 py-5 px-4 items-center gap-3 flex-shrink-1 self-stretch border-b-gray-20 overflow-auto whitespace-pre"
+                className="flex w-1/4 py-5 px-4 items-center gap-3 flex-shrink-1 self-stretch border-b-gray-20 overflow-auto whitespace-pre scrollbar-hide"
               >
                 {v.item.notice.item.hourlyPay}
               </td>
-              <td className="flex w-1/5 py-5 px-3 items-center gap-3 flex-shrink-0 self-stretch border-b-gray-20 overflow-auto whitespace-pre">
+              <td className="flex w-1/5 py-5 px-3 items-center gap-3 flex-shrink-0 self-stretch border-b-gray-20 overflow-auto whitespace-pre  scrollbar-hide">
                 {v.item.status ? (
                   <p
                     className={`p-4 ${
