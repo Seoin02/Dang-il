@@ -21,9 +21,10 @@ const Button = ({
 
     switch (size) {
       case 'large':
-        sizeStyle = 'py-[14px] px-[136px]';
+        sizeStyle =
+          'py-[14px] px-[136px] tablet:w-[632px] tablet:px-[280px] mobile:w-full mobile:px-auto';
         fontStyle =
-          'font-bold text-base leading-5 align-center whitespace-nowrap';
+          'font-bold text-base leading-5 whitespace-nowrap text-center';
         break;
       case 'mediumLarge':
         sizeStyle = 'py-3 px-[56px]';
