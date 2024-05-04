@@ -300,7 +300,6 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
                   closed={false}
                 />
                 <p className="my-3">{getdata.shop.item.description}</p>
-
                 <Button
                   size="large"
                   color={isButtonColor}
