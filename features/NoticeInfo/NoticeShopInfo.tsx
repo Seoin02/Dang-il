@@ -253,7 +253,7 @@ const NoticeShopInfo = ({ userType, isLogin, shopId, noticeId }: props) => {
   return (
     <div className="mobile:w-full mobile:px-auto flex justify-center">
       {getdata && (
-        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[680px] mobile:w-full  mobile:flex mobile:flex-col mobile:items-start mobile:px-5">
+        <div className="py-[60px] mx-[238px] w-[963px] tablet:w-[678px] mobile:w-full  mobile:flex mobile:flex-col mobile:items-start mobile:px-5">
           <Modal
             content={modalContent}
             isOpen={isOpen}

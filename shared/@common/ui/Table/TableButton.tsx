@@ -25,16 +25,20 @@ const TableButton = ({ onClick }: ButtonComponentProps) => {
       {buttonVisible ? (
         <>
           <button
-            className="border-red-30 flex py-2 px-3 content-center items-center rounded-md border border-solid "
+            className="border-red-30 flex py-2 px-3 content-center items-center rounded-md border border-solid"
             onClick={() => handleButtonClick('rejected')}
           >
-            <p className="text-red-40 font-bold text-sm">거절하기</p>
+            <p className="text-red-40 font-bold text-sm mobile:text-[12px]">
+              거절하기
+            </p>
           </button>
           <button
             className="border-blue-20 flex py-2 px-3 content-center items-center rounded-md border border-solid"
             onClick={() => handleButtonClick('accepted')}
           >
-            <p className="text-blue-20 font-bold text-sm">승인하기</p>
+            <p className="text-blue-20 font-bold text-sm mobile:text-[12px]">
+              승인하기
+            </p>
           </button>
         </>
       ) : (

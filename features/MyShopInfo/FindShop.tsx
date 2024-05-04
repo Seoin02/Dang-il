@@ -84,10 +84,8 @@ const FindShop = () => {
     return (
       <div className="bg-white">
         <div className="flex m-[auto] w-[983px] py-[60px] px-[auto] flex-col items-start gap-2 bg-white tablet:w-full mobile:w-full tablet:px-8 mobile:px-3  ">
-          <p className="text-black text-[28px] font-bold mobile:text-xl">
-            내 가게
-          </p>
-          <div className="w-full">
+          <p className="text-black text-[28px] font-bold">내 가게</p>
+          <div className="w-full relative">
             <div className="object-cover h-[340px] inline-flex py-[60px] px-[57px] w-[964px] p-6 justify-between items-start rounded-xl bg-purple-10 tablet:w-full mobile:w-full tablet:h-full mobile:h-full tablet:flex-col mobile:flex-col">
               <Image
                 src={shop.imageUrl}
@@ -96,8 +94,8 @@ const FindShop = () => {
                 height={400}
                 className="max-h-400 max-w-400"
               />
-              <div className="flex w-[346px] pt-4 flex-col justify-between items-start self-stretch">
-                <div className="flex w-[346px] p-2 flex-col items-start gap-3">
+              <div className="flex w-[346px] pt-4 flex-col justify-between items-start self-stretch mobile:w-full">
+                <div className="flex w-full p-2 flex-col items-start gap-3">
                   <div className="flex flex-col items-start gap-2">
                     <p className=" text-primary font-bold text-base">
                       {shop.category}
