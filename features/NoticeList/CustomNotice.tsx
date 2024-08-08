@@ -6,7 +6,6 @@ import useFetch from '@/shared/@common/api/hooks/useFetch';
 import noticeAPI from '@/shared/@common/api/noticeAPI';
 import userAPI from '@/shared/@common/api/userAPI';
 import { jwtDecode } from 'jwt-decode';
-import Loading from '@/shared/@common/ui/Loading';
 
 export type JwtDecode = {
   userId?: string;
@@ -37,9 +36,7 @@ const CustomNotice = () => {
   }, [userId]);
   const userAddress = data && data.item.address;
 
-  return loading ? (
-    <Loading />
-  ) : (
+  return (
     <div className="flex w-full py-[60px] px-auto flex-col items-center bg-purple-10">
       <div className="flex flex-col gap-10 px-4 w-[983px] tablet:w-[678px] mobile:w-full">
         <div className="text-[28px] font-bold">맞춤 공고</div>

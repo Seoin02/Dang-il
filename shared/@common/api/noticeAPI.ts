@@ -1,6 +1,6 @@
 import { axiosInstance } from '@/shared/@common/api/axiosInstance';
 
-interface GetNoticeListData {
+export interface GetNoticeListData {
   offset?: number;
   limit?: number;
   address?: string;

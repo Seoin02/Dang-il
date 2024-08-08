@@ -121,9 +121,6 @@ const AllNotice = () => {
     setShowDetailFilter(true);
   };
 
-  if (loading) {
-    return <Loading />;
-  }
   return (
     <div className="flex flex-col w-full py-[60px] px-auto items-center bg-white tracking-wide">
       <div className="flex flex-col gap-10 px-4 w-[983px] tablet:w-[678px] mobile:w-full">
